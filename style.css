@@ -1,0 +1,90 @@
+/*Police du site*/
+body{
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  background-image: url(images/matrix.gif);
+  font-size: 25px;
+}
+/*Bootstrap*/
+.container{
+  opacity: 0.9;
+  background: beige;
+
+}
+/*LES TITRES*/
+h1,h2,h3{
+  text-align: center;
+}
+
+/*MENU*/
+nav{
+  display: flex;
+  justify-content: center;
+}
+li{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+/* COMPETENCE */
+/*progress barre*/
+.progress{
+  width: 150px;
+}
+.container-competence{
+  display: flex;
+  justify-content: space-around;
+}
+/*PARAGRAPHE ACCEUIL*/
+.paragraph-home{
+  margin-top: 40px;
+  text-align: center;
+}
+.paragraph-asset{
+  margin-top: 10px;
+  text-align: center;
+}
+
+/*PAGE CONTACT*/
+.fa-user{
+  color: #8E6E3D;
+}
+.fa-home{
+  color: #BDC3C7;
+}
+.street-view{
+  color: #59B8E6;
+}
+.fa-car{
+  color: #6B0328;
+}
+.fa-envelope{
+  color: #FFCC00;
+}
+.fa-phone{
+  color: #3F2D28;
+}
+/*MEDIA QUERIES*/
+@media screen and (max-width: 978px){
+body{
+  font-size:20px;
+  }
+}
+
+/*Animation*/
+h2{; animation-name: anim2; /*nom de l'animation */ animation-duration: 10s; /*durée de l'animation */ animation-iteration-count: infinite; /*répétition */} /*animation*/
+@keyframes anim2 {
+ 0% {color:green;}
+ 10% {color:aqua;}
+ 20% {color:yellow;}
+ 30% {color:blue;}
+ 40% {color:red;}
+ 50% {color:brown;}
+ 60% {color:black;}
+ 70% {color:lime;}
+ 80% {color:teal;}
+ 90% {color:SaddleBrown;}
+ 100% {color:black;}
+}
