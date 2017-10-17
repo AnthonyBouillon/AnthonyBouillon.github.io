@@ -31,12 +31,18 @@ li{
 /* COMPETENCE */
 /*progress barre*/
 .progress{
-  width: 150px;
+  width: 200px;
+  padding:2px;
+  background-color:white;
+  border:1px solid black;
+  text-align:center;
+
 }
 .container-competence{
   display: flex;
   justify-content: space-around;
 }
+
 /*PARAGRAPHE ACCEUIL*/
 .paragraph-home{
   margin-top: 40px;
