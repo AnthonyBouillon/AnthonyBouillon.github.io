@@ -9,7 +9,7 @@ body{
 }
 /*Bootstrap*/
 .container{
-  opacity: 0.9;
+  opacity: 1;
   background: beige;
 
 }
@@ -78,13 +78,15 @@ body{
   font-size:20px;
   }
 }
-
+a{
+  color: black;
+}
 /*Animation*/
 h2{; animation-name: anim2; /*nom de l'animation */ animation-duration: 10s; /*durée de l'animation */ animation-iteration-count: infinite; /*répétition */} /*animation*/
 @keyframes anim2 {
  0% {color:green;}
- 10% {color:aqua;}
- 20% {color:yellow;}
+ 10% {color:indigo;}
+ 20% {color:purple;}
  30% {color:blue;}
  40% {color:red;}
  50% {color:brown;}
