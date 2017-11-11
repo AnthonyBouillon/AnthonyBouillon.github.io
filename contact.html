@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <title>Contact</title>
   </head>
-  <body id="body">
-    <div class="container class="body-contact"">
+  <body id="contactBody">
+    <div class="container">
       <div class="row">
         <header class="col-md-12">
           <h1>Anthony Bouillon</h1>
@@ -50,33 +50,46 @@
             <!-- FIN DU MENU -->
             <div class="row">
               <!-- Il prend la moitié de la page et je saute de 3 colonnes -->
-              <article class="col-md-offset-3 col-md-6">
-                <address class="thumbnail">
-                 <p class="paragraph-contact"><i class="fa fa-user" aria-hidden="true"></i>
-                             Anthony BOUILLON</p>
-                 <p class="paragraph-contact"><i class="fa fa-home" aria-hidden="true"></i>
-                             Le Plessis Brion</p>
-                 <p class="paragraph-contact"><i class="fa fa-street-view" aria-hidden="true"></i>
-                             114 rue André Levaire</p>
-                 <p class="paragraph-contact"><i class="fa fa-car" aria-hidden="true"></i>
-                             Permis B et véhiculé</p>
-                 <p class="paragraph-contact"><i class="fa fa-envelope" aria-hidden="true"></i>
-                            <a id="mailto" href="mailto:anthony-bouillon@outlook.fr" >Adresse mail: anthony-bouillon@outlook.fr</p></a>
-                 <p class="paragraph-contact"><i class="fa fa-phone" aria-hidden="true"></i>
-                             Téléphone: 06.49.70.52.50</p>
-                           </adress>
-                           </div>
-                         </div>
-                         <!-- test defilement -->
-                         <a class="left carousel-control" href="index.html" data-slide="prev">
-                           <span class="glyphicon glyphicon-chevron-left"></span>
-                         </a>
-                         <a class="right carousel-control" href="index.html" data-slide="next">
-                           <span class="glyphicon glyphicon-chevron-right"></span>
-                         </a>
-                         <!-- fin du test défilement -->
          </div>
-
+<!--    La classe text-center permet de centrer le contenue du container    -->
+    <div class="container text-center contactContainer">
+<!--    La classe jumbotron permet d'avoir un encadrement autour du contenue    -->
+      <div class="jumbotron contactPage">
+<!--    img-circle permet de rendre l'avatar ronde      -->
+        <img src="images/avatar.png" class="img-circle avatar"/>
+        <h1 id="contactH1">Anthony Bouillon</h1>
+        <h2 id="contactH2">Développeur web</h2>
+          <hr>
+          <div class="row">
+            <div class="col-xs-6">
+                <h3 class="contactUnderTitle"><strong>Contact</strong></h3>
+                <ul class="contactUl">
+                  <li class="contactLi"><a href="mailto:anthony-bouillon@outlook.fr">anthony-bouillon@outlook.fr</a></li>
+                  <li class="contactLi">06-49-70-52-50</li>
+              </ul>
+              </div>
+              <div class="col-xs-6">
+                  <h3 class="contactUnderTitle"><strong>Adresse</strong></h3>
+                <ul class="contactUl">
+                  <li class="contactLi">Le Plessis-Brion, 60150</li>
+                  <li class="contactLi">Permis B et véhiculer</li>
+                </ul>
+              </div>
+          </div>
+          <hr>
+          <div class="row social">
+            <div class="col-xs-4">
+              <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+              <div class="col-xs-4">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+              <div class="col-xs-4">
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+          </div>
+      </div>
+    </div>
         <!-- JQUERY + JS DE BOOTRAP POUR LE MENU SANDWICH -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  <script src="bootstrap/dist/js/bootstrap.min.js"></script>

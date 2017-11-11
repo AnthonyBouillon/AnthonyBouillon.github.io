@@ -1,17 +1,17 @@
 /*Police du site*/
 body{
   font-family: 'Indie Flower', cursive;
-  font-size: 20px;
   margin: 0;
   padding: 0;
-  background-image: url(images/matrix.gif);
   font-size: 25px;
 }
 /*Bootstrap*/
 .container{
   opacity: 1;
   background: beige;
-
+}
+#indexTitle{
+    font-size: 35px;
 }
 /*LES TITRES*/
 h1,h2,h3{
@@ -23,7 +23,7 @@ nav{
   display: flex;
   justify-content: center;
 }
-li{
+.indexLi{
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -53,25 +53,6 @@ li{
   text-align: center;
 }
 
-/*PAGE CONTACT*/
-.fa-user{
-  color: #8E6E3D;
-}
-.fa-home{
-  color: #BDC3C7;
-}
-.street-view{
-  color: #59B8E6;
-}
-.fa-car{
-  color: #6B0328;
-}
-.fa-envelope{
-  color: #FFCC00;
-}
-.fa-phone{
-  color: #3F2D28;
-}
 /*MEDIA QUERIES*/
 @media screen and (max-width: 991px){
 body{
@@ -82,7 +63,7 @@ a{
   color: black;
 }
 /*Animation*/
-h2{; animation-name: anim2; /*nom de l'animation */ animation-duration: 10s; /*durée de l'animation */ animation-iteration-count: infinite; /*répétition */} /*animation*/
+.indexH2{; animation-name: anim2; /*nom de l'animation */ animation-duration: 10s; /*durée de l'animation */ animation-iteration-count: infinite; /*répétition */} /*animation*/
 @keyframes anim2 {
  0% {color:green;}
  10% {color:indigo;}
@@ -95,4 +76,59 @@ h2{; animation-name: anim2; /*nom de l'animation */ animation-duration: 10s; /*d
  80% {color:teal;}
  90% {color:SaddleBrown;}
  100% {color:black;}
+}
+/*Body de la page contact*/
+#contactBody{
+    background-image: linear-gradient(60deg, rgba(255,105,0, 0.5), rgba(105,210,231, 0.5)), url("images/home-header.jpg");
+    background-attachment: fixed;
+    font-family: 'Indie Flower', cursive;
+}
+.contactContainer{
+    margin-top: 1%;
+    width: 80%;
+    max-width: 900px;
+}
+/*Class jumbotron*/
+.contactPage{
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+    opacity: 0.9;
+}
+#contactH1{
+    font-size: 40px;
+}
+/*Image dimension*/
+.avatar{
+    width: 180px;
+    height: 180px;
+    box-shadow: 1px 2px 2px black;
+}
+/*Li contact*/
+.contactLi{
+    list-style-type: none;
+    font-size: 20px;
+}
+/*Retirer le padding par defaut de notre liste li*/
+.contactUl{
+    padding-left: 0;
+}
+/*Sous titre de la page contact (h3) */
+.contactUnderTitle{
+    text-decoration: underline;
+}
+/*Taille des icones page contact*/
+.social{
+    font-size: 40px;
+}
+.social .fa:hover{
+    opacity: 0.8;
+}
+/*Couleur des icones page contact*/
+.fa-facebook{
+    color: #3C5899;
+}
+.fa-github{
+    color: black;
+}
+.fa-twitter{
+    color: #55ACEE;
 }
