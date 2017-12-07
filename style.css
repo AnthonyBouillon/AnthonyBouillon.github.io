@@ -17,6 +17,10 @@ body{
 h1,h2,h3{
   text-align: center;
 }
+/*Signification de phylosophe*/
+.biography{
+  text-decoration: underline;
+}
 /*Titre catégories compétences*/
 .title_competence{
   padding-bottom: 10px;
@@ -121,10 +125,6 @@ a{
 /*Retirer le padding par defaut de notre liste li*/
 .contactUl{
     padding-left: 0;
-}
-/*Sous titre de la page contact (h3) */
-.contactUnderTitle{
-    text-decoration: underline;
 }
 /*Taille des icones page contact*/
 .social{
